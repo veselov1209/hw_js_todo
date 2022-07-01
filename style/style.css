@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(107, 170, 224);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+.toDoWrapper {
+    padding: 10px 10px 0 10px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.addTasks input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#btn {
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(107, 170, 224);
+}
+
+#task {
+    font-size: 26px;
+    
+}
+
+.addTasks {
+    border-bottom: 1px solid rgb(165, 161, 161);
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid rgb(165, 161, 161);
+}
+
+.toDoFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteBtn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: tomato;
+    margin-bottom: 19px;
+}
+
+li.active {
+    text-decoration-line: line-through;
+}
+
+.delBtn {
+    height: 0;
+    width: 0;
+    font-size: 0;
+}
+
+li:hover > .delBtn{
+    display: block;
+    background-color: tomato;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: none;
+    text-decoration-line: none;
+    transition: 0.3s;
+    font-size: 16px;
+    position: absolute;
+    left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
